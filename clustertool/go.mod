@@ -20,7 +20,7 @@ require (
 	github.com/rs/zerolog v1.34.0
 	github.com/siderolabs/talos/pkg/machinery v1.12.0-alpha.1
 	github.com/spf13/cobra v1.10.1
-	golang.org/x/crypto v0.44.0
+	golang.org/x/crypto v0.47.0
 	gopkg.in/yaml.v3 v3.0.1
 	helm.sh/helm/v3 v3.19.0
 	k8s.io/api v0.35.0
@@ -28,7 +28,7 @@ require (
 	k8s.io/client-go v0.35.0
 	sigs.k8s.io/controller-runtime v0.22.2
 	sigs.k8s.io/kustomize/api v0.20.1
-	sigs.k8s.io/kustomize/kyaml v0.20.1
+	sigs.k8s.io/kustomize/kyaml v0.21.0
 	sigs.k8s.io/yaml v1.6.0
 )
 
@@ -219,7 +219,7 @@ require (
 	github.com/sabhiram/go-gitignore v0.0.0-20210923224102-525f6e181f06 // indirect
 	github.com/santhosh-tekuri/jsonschema/v6 v6.0.2 // indirect
 	github.com/sasha-s/go-deadlock v0.3.5 // indirect
-	github.com/sergi/go-diff v1.3.2-0.20230802210424-5b0b94c5c0d3 // indirect
+	github.com/sergi/go-diff v1.4.0 // indirect
 	github.com/shopspring/decimal v1.4.0 // indirect
 	github.com/siderolabs/crypto v0.6.4 // indirect
 	github.com/siderolabs/gen v0.8.5 // indirect
@@ -253,13 +253,13 @@ require (
 	go.yaml.in/yaml/v2 v2.4.3 // indirect
 	go.yaml.in/yaml/v3 v3.0.4 // indirect
 	golang.org/x/exp v0.0.0-20250506013437-ce4c2cf36ca6 // indirect
-	golang.org/x/mod v0.29.0 // indirect
-	golang.org/x/net v0.47.0 // indirect
+	golang.org/x/mod v0.31.0 // indirect
+	golang.org/x/net v0.48.0 // indirect
 	golang.org/x/oauth2 v0.31.0 // indirect
-	golang.org/x/sync v0.18.0 // indirect
-	golang.org/x/sys v0.38.0 // indirect
-	golang.org/x/term v0.37.0 // indirect
-	golang.org/x/text v0.31.0 // indirect
+	golang.org/x/sync v0.19.0 // indirect
+	golang.org/x/sys v0.40.0 // indirect
+	golang.org/x/term v0.39.0 // indirect
+	golang.org/x/text v0.33.0 // indirect
 	golang.org/x/time v0.13.0 // indirect
 	google.golang.org/api v0.250.0 // indirect
 	google.golang.org/genproto v0.0.0-20250603155806-513f23925822 // indirect
