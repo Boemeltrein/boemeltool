@@ -44,3 +44,4 @@ jobs:
         with:
           version: latest
           args: --timeout 3m0s
+          working-directory: clustertool  ## ADDED by Boemeltrein
