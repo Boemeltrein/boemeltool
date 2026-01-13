@@ -9,12 +9,12 @@ version="v1.8.0"  # Example version
 # Define the OS and architecture combinations
 combinations=(
     "linux amd64"
-    "linux arm64"
-    "darwin amd64"
-    "darwin arm64"
+#    "linux arm64"
+#    "darwin amd64"
+#    "darwin arm64"
     "windows amd64"
-    "freebsd amd64"
-    "freebsd arm64"
+#    "freebsd amd64"
+#    "freebsd arm64"
 )
 
 # Base URL for downloading the file
