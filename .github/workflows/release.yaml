@@ -26,7 +26,7 @@ jobs:
 
       - uses: goreleaser/goreleaser-action@e435ccd777264be153ace6237001ef4d979d3a7a # v6
         with:
-          args: release --clean
+          args: release --clean --config clustertool/.goreleaser.yml
           distribution: goreleaser # or 'goreleaser-pro'
           version: "~> v2" # or 'latest', 'nightly', semver
         env:
