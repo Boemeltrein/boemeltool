@@ -1,33 +1,43 @@
-#!/usr/bin/env bash
-set -euo pipefail
+#!/bin/bash
 
-# Target OSes and architectures
-# oses=("linux" "windows" "darwin" "freebsd")
-# arches=("amd64" "arm64")
-oses=("linux" "windows")
-arches=("amd64")
+set -e
 
+# Define target OS names
+# os_names=("linux" "windows" "darwin" "freebsd")  ## DISABLED by Boemeltrein
+os_names=("linux" "windows")
+# Define corresponding GOOS values
+# os_targets=("linux" "windows" "darwin" "freebsd")  ## DISABLED by Boemeltrein
+os_targets=("linux" "windows")
+
+# Define target architectures  
+# architectures=("amd64" "arm64")  ## DISABLED by Boemeltrein
+architectures=("amd64")
 
 # Ensure embed directories exist
-for os in "${oses[@]}"; do
-  for arch in "${arches[@]}"; do
-    mkdir -p "embed/${os}_${arch}"
-  done
+for i in "${!os_names[@]}"; do
+    os=${os_names[i]}
+    for arch in "${architectures[@]}"; do
+        mkdir -p "./clustertool/embed/${os}_${arch}"
+    done
 done
 
-# Build precommit binary for each OS/ARCH
-for os in "${oses[@]}"; do
-  for arch in "${arches[@]}"; do
-    echo "Building precommit for ${os}/${arch}"
+# Build the precommit binary for each OS and architecture
+for i in "${!os_names[@]}"; do
+    os=${os_names[i]}
+    for arch in "${architectures[@]}"; do
+        echo "Building precommit for $os/$arch"
 
-    output="embed/${os}_${arch}/precommit"
-    if [[ "$os" == "windows" ]]; then
-      output="${output}.exe"
-    fi
+        # Determine output file name and extension
+        output="./embed/${os}_${arch}/precommit"
+        mkdir "./clustertool/embed/${os}_${arch}/" || echo "mkdir failed or not needed"
+        if [ "$os" == "windows" ]; then
+            output+=".exe"
+        fi
 
-    GOOS="$os" GOARCH="$arch" \
-      go build -o "$output" ./partial_builds/precommit/main.go
-
-    ls -lh "embed/${os}_${arch}/"
-  done
+        # Build the binary
+        cd clustertool
+        GOOS=$os GOARCH=$arch go build -o $output ./partial_builds/precommit/main.go
+        ls -l "./embed/${os}_${arch}/" || echo "ls failed"
+        cd -
+    done
 done
