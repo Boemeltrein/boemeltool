@@ -37,8 +37,8 @@ changelog:
 release:
   name_template: "{{.ProjectName}}-{{.Tag}}"
   github:
-    owner: trueforge-org
-    name: truecharts
+    owner: Boemeltrein
+    name: boemeltool
   extra_files:
     - glob: "clustertool/clustertool.LICENSE"
   draft: false
