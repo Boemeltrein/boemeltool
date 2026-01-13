@@ -4,9 +4,15 @@
     "config:recommended",
     "github>trueforge-org/renovate-config",
     "github>trueforge-org/renovate-config:autoMergeLabels.json5"
+  ],
+  "regexManagers": [
+    {
+      "fileMatch": ["\\.sh$"],
+      "matchStrings": [
+        "version=\"(?<currentValue>v?[0-9\\.]+)\""
+      ],
+      "depNameTemplate": "ghcr.io/siderolabs/installer",
+      "datasourceTemplate": "docker"
+    }
   ]
-  // "registryAliases": {
-  //   "registry-1.docker.io": "http://192.168.10.208:5000",
-  //   "docker.io": "http://192.168.10.208:5000"
-  // }
 }
