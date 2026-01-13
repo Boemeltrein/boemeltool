@@ -2,8 +2,11 @@
 set -euo pipefail
 
 # Target OSes and architectures
-oses=("linux" "windows" "darwin" "freebsd")
-arches=("amd64" "arm64")
+# oses=("linux" "windows" "darwin" "freebsd")
+# arches=("amd64" "arm64")
+oses=("linux" "windows")
+arches=("amd64")
+
 
 # Ensure embed directories exist
 for os in "${oses[@]}"; do
