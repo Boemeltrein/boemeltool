@@ -55,12 +55,12 @@ universal_binaries:
 
 report_sizes: true
 
-before:
-  hooks:
-    - chmod +x ./clustertool/partial_builds/partial_build.sh
-    - bash ./clustertool/partial_builds/partial_build.sh
-    - chmod +x ./clustertool/embed/download_talosctl.sh
-    - bash ./clustertool/embed/download_talosctl.sh
+# before:
+#   hooks:
+#     - chmod +x ./clustertool/partial_builds/partial_build.sh
+#     - bash ./clustertool/partial_builds/partial_build.sh
+#     - chmod +x ./clustertool/embed/download_talosctl.sh
+#     - bash ./clustertool/embed/download_talosctl.sh
 
 # sboms:
 #   - artifacts: archive
