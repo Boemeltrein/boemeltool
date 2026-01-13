@@ -18,20 +18,9 @@ builds:
 gomod:
   dir: ./clustertool
 archives:
-  - id: linux
-    format: tar.gz
+  - format: tar.gz
     name_template: "{{ .ProjectName }}_{{ .Version }}_linux_{{ .Arch }}"
-    builds: [clustertool]
-    goos:
-      - linux
-
-  - id: windows
-    format: zip
-    name_template: "{{ .ProjectName }}_{{ .Version }}_windows_{{ .Arch }}"
-    builds: [clustertool]
-    goos:
-      - windows
-
+    wrap_in_directory: true
 checksum:
   name_template: "checksums.txt"
 snapshot:
