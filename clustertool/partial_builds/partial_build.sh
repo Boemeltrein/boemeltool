@@ -1,40 +1,30 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -euo pipefail
 
-set -e
-
-# Define target OS names
-os_names=("linux" "windows" "darwin" "freebsd")
-# Define corresponding GOOS values
-os_targets=("linux" "windows" "darwin" "freebsd")
-
-# Define target architectures
-architectures=("amd64" "arm64")
+# Target OSes and architectures
+oses=("linux" "windows" "darwin" "freebsd")
+arches=("amd64" "arm64")
 
 # Ensure embed directories exist
-for i in "${!os_names[@]}"; do
-    os=${os_names[i]}
-    for arch in "${architectures[@]}"; do
-        mkdir -p "./clustertool/embed/${os}_${arch}"
-    done
+for os in "${oses[@]}"; do
+  for arch in "${arches[@]}"; do
+    mkdir -p "embed/${os}_${arch}"
+  done
 done
 
-# Build the precommit binary for each OS and architecture
-for i in "${!os_names[@]}"; do
-    os=${os_names[i]}
-    for arch in "${architectures[@]}"; do
-        echo "Building precommit for $os/$arch"
+# Build precommit binary for each OS/ARCH
+for os in "${oses[@]}"; do
+  for arch in "${arches[@]}"; do
+    echo "Building precommit for ${os}/${arch}"
 
-        # Determine output file name and extension
-        output="./embed/${os}_${arch}/precommit"
-        mkdir "./clustertool/embed/${os}_${arch}/" || echo "mkdir failed or not needed"
-        if [ "$os" == "windows" ]; then
-            output+=".exe"
-        fi
+    output="embed/${os}_${arch}/precommit"
+    if [[ "$os" == "windows" ]]; then
+      output="${output}.exe"
+    fi
 
-        # Build the binary
-        cd clustertool
-        GOOS=$os GOARCH=$arch go build -o $output ./partial_builds/precommit/main.go
-        ls -l "./embed/${os}_${arch}/" || echo "ls failed"
-        cd -
-    done
+    GOOS="$os" GOARCH="$arch" \
+      go build -o "$output" ./partial_builds/precommit/main.go
+
+    ls -lh "embed/${os}_${arch}/"
+  done
 done
