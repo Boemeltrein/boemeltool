@@ -1,4 +1,4 @@
-module github.com/trueforge-org/truecharts/clustertool
+module github.com/Boemeltrein/boemeltool/clustertool
 
 go 1.25.5
 
