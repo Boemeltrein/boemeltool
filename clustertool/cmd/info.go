@@ -4,7 +4,7 @@ import (
 	"strings"
 
 	"github.com/spf13/cobra"
-	"github.com/trueforge-org/truecharts/clustertool/pkg/info"
+	"github.com/Boemeltrein/boemeltool/clustertool/pkg/info"
 )
 
 var infoLongHelp = strings.TrimSpace(`

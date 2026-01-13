@@ -9,7 +9,7 @@ import (
 	"github.com/Masterminds/semver/v3"
 	"github.com/go-git/go-git/v5"
 	"github.com/rs/zerolog/log"
-	"github.com/trueforge-org/truecharts/clustertool/pkg/helper"
+	"github.com/Boemeltrein/boemeltool/clustertool/pkg/helper"
 )
 
 type ChangelogOptions struct {

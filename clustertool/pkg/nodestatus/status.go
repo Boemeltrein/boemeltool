@@ -6,8 +6,8 @@ import (
 	"strings"
 
 	"github.com/rs/zerolog/log"
-	"github.com/trueforge-org/truecharts/clustertool/embed"
-	"github.com/trueforge-org/truecharts/clustertool/pkg/helper"
+	"github.com/Boemeltrein/boemeltool/clustertool/embed"
+	"github.com/Boemeltrein/boemeltool/clustertool/pkg/helper"
 )
 
 func baseStatusCMD(node string) []string {

@@ -8,10 +8,10 @@ import (
 	"strings"
 
 	"github.com/rs/zerolog/log"
-	"github.com/trueforge-org/truecharts/clustertool/pkg/charts/helmignore"
-	"github.com/trueforge-org/truecharts/clustertool/pkg/charts/image"
-	"github.com/trueforge-org/truecharts/clustertool/pkg/charts/readme"
-	"github.com/trueforge-org/truecharts/clustertool/pkg/charts/version"
+	"github.com/Boemeltrein/boemeltool/clustertool/pkg/charts/helmignore"
+	"github.com/Boemeltrein/boemeltool/clustertool/pkg/charts/image"
+	"github.com/Boemeltrein/boemeltool/clustertool/pkg/charts/readme"
+	"github.com/Boemeltrein/boemeltool/clustertool/pkg/charts/version"
 )
 
 // UpdateChartFile updates the specified Chart.yaml file with an optional bump parameter.

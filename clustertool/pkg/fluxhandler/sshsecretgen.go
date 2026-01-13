@@ -14,7 +14,7 @@ import (
 
 	"github.com/rs/zerolog/log"
 
-	"github.com/trueforge-org/truecharts/clustertool/pkg/helper"
+	"github.com/Boemeltrein/boemeltool/clustertool/pkg/helper"
 	"golang.org/x/crypto/ssh"
 	"gopkg.in/yaml.v3"
 	corev1 "k8s.io/api/core/v1"

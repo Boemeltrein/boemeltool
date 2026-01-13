@@ -4,10 +4,10 @@ import (
 	"strings"
 
 	"github.com/spf13/cobra"
-	"github.com/trueforge-org/truecharts/clustertool/pkg/gencmd"
-	"github.com/trueforge-org/truecharts/clustertool/pkg/helper"
-	"github.com/trueforge-org/truecharts/clustertool/pkg/initfiles"
-	"github.com/trueforge-org/truecharts/clustertool/pkg/talassist"
+	"github.com/Boemeltrein/boemeltool/clustertool/pkg/gencmd"
+	"github.com/Boemeltrein/boemeltool/clustertool/pkg/helper"
+	"github.com/Boemeltrein/boemeltool/clustertool/pkg/initfiles"
+	"github.com/Boemeltrein/boemeltool/clustertool/pkg/talassist"
 )
 
 var advBootstrapLongHelp = strings.TrimSpace(`

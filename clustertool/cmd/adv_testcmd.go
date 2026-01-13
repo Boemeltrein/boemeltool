@@ -8,10 +8,10 @@ import (
 
 	"github.com/rs/zerolog/log"
 	"github.com/spf13/cobra"
-	"github.com/trueforge-org/truecharts/clustertool/pkg/helper"
-	"github.com/trueforge-org/truecharts/clustertool/pkg/initfiles"
-	"github.com/trueforge-org/truecharts/clustertool/pkg/kubectlcmds"
-	"github.com/trueforge-org/truecharts/clustertool/pkg/talassist"
+	"github.com/Boemeltrein/boemeltool/clustertool/pkg/helper"
+	"github.com/Boemeltrein/boemeltool/clustertool/pkg/initfiles"
+	"github.com/Boemeltrein/boemeltool/clustertool/pkg/kubectlcmds"
+	"github.com/Boemeltrein/boemeltool/clustertool/pkg/talassist"
 )
 
 var advTestCmdlongHelp = strings.TrimSpace(`

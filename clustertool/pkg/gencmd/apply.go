@@ -5,9 +5,9 @@ import (
 	"path/filepath"
 
 	"github.com/rs/zerolog/log"
-	"github.com/trueforge-org/truecharts/clustertool/embed"
-	"github.com/trueforge-org/truecharts/clustertool/pkg/helper"
-	"github.com/trueforge-org/truecharts/clustertool/pkg/talassist"
+	"github.com/Boemeltrein/boemeltool/clustertool/embed"
+	"github.com/Boemeltrein/boemeltool/clustertool/pkg/helper"
+	"github.com/Boemeltrein/boemeltool/clustertool/pkg/talassist"
 )
 
 func GenApply(node string, extraArgs []string) []string {

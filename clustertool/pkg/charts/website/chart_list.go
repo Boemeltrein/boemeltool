@@ -8,8 +8,8 @@ import (
 	"slices"
 	"sync"
 
-	"github.com/trueforge-org/truecharts/clustertool/pkg/charts/chartFile"
-	"github.com/trueforge-org/truecharts/clustertool/pkg/helper"
+	"github.com/Boemeltrein/boemeltool/clustertool/pkg/charts/chartFile"
+	"github.com/Boemeltrein/boemeltool/clustertool/pkg/helper"
 )
 
 type ChartList struct {

@@ -8,11 +8,11 @@ import (
 
 	"github.com/rs/zerolog/log"
 
-	"github.com/trueforge-org/truecharts/clustertool/pkg/fluxhandler"
-	"github.com/trueforge-org/truecharts/clustertool/pkg/helper"
-	"github.com/trueforge-org/truecharts/clustertool/pkg/initfiles"
-	"github.com/trueforge-org/truecharts/clustertool/pkg/sops"
-	"github.com/trueforge-org/truecharts/clustertool/pkg/talassist"
+	"github.com/Boemeltrein/boemeltool/clustertool/pkg/fluxhandler"
+	"github.com/Boemeltrein/boemeltool/clustertool/pkg/helper"
+	"github.com/Boemeltrein/boemeltool/clustertool/pkg/initfiles"
+	"github.com/Boemeltrein/boemeltool/clustertool/pkg/sops"
+	"github.com/Boemeltrein/boemeltool/clustertool/pkg/talassist"
 )
 
 func GenConfig(args []string) error {

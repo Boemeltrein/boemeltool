@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/trueforge-org/truecharts/clustertool/pkg/charts/image"
+	"github.com/Boemeltrein/boemeltool/clustertool/pkg/charts/image"
 )
 
 func TestSetAppVersionFromImage(t *testing.T) {

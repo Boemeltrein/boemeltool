@@ -5,8 +5,8 @@ import (
 
 	"github.com/rs/zerolog/log"
 	"github.com/spf13/cobra"
-	"github.com/trueforge-org/truecharts/clustertool/pkg/charts/deps"
-	"github.com/trueforge-org/truecharts/clustertool/pkg/helper"
+	"github.com/Boemeltrein/boemeltool/clustertool/pkg/charts/deps"
+	"github.com/Boemeltrein/boemeltool/clustertool/pkg/helper"
 )
 
 var chartsDepsLongHelp = strings.TrimSpace(`

@@ -6,7 +6,7 @@ import (
 	"github.com/rs/zerolog/log"
 
 	"github.com/spf13/cobra"
-	"github.com/trueforge-org/truecharts/clustertool/pkg/charts/image"
+	"github.com/Boemeltrein/boemeltool/clustertool/pkg/charts/image"
 )
 
 var chartsTagCleanLongHelp = strings.TrimSpace(`
