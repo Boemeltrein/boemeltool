@@ -7,11 +7,13 @@ builds:
       - CGO_ENABLED=0
     goos:
       - linux
+      - windows
+      ## DISABLED by Boemeltrein
       # - darwin
       # - freebsd
-      - windows
     goarch:
       - amd64
+      ## DISABLED by Boemeltrein
       # - arm64
     ldflags:
       - -s -w -X main.Version={{.Version}}  # Adjust path if necessary
@@ -37,6 +39,9 @@ changelog:
 release:
   name_template: "{{.ProjectName}}-{{.Tag}}"
   github:
+    ## CHANGED by Boemeltrein
+    # owner: trueforge-org
+    # name: truecharts
     owner: Boemeltrein
     name: boemeltool
   extra_files:
@@ -52,15 +57,17 @@ git:
 
 report_sizes: true
 
+before:
+  hooks:
+    - chmod +x ./clustertool/partial_builds/partial_build.sh
+    - bash ./clustertool/partial_builds/partial_build.sh
+    - chmod +x ./clustertool/embed/download_talosctl.sh
+    - bash ./clustertool/embed/download_talosctl.sh
+
+## DISABLED by Boemeltrein, not needed for only Linux tar.gz and Windows builds
+
 # universal_binaries:
 #   - replace: true
-
-# before:
-#   hooks:
-#     - chmod +x ./clustertool/partial_builds/partial_build.sh
-#     - bash ./clustertool/partial_builds/partial_build.sh
-#     - chmod +x ./clustertool/embed/download_talosctl.sh
-#     - bash ./clustertool/embed/download_talosctl.sh
 
 # sboms:
 #   - artifacts: archive
@@ -84,11 +91,10 @@ report_sizes: true
 #     description: "Tool to help bootstrap a Kubernetes cluster"
 #     license: "BUSL-1.1"
 #     git_url: "ssh://aur@aur.archlinux.org/clustertool-bin.git"
-#    skip_upload: auto
-#    package: |
-#      # Install binary
+#     skip_upload: auto
+#     package: |
+#       # Install binary
 #       bsdtar -xvf clustertool_${pkgver}_linux_${CARCH}.tar.gz -C "${pkgdir}"
 #       install -Dm755 "${pkgdir}/clustertool" "${pkgdir}/usr/bin/clustertool"
-#
-#      # Install license
+#       # Install license
 #       install -Dm644 "${pkgdir}/LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
