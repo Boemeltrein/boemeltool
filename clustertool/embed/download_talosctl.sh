@@ -4,15 +4,16 @@
 set -euo pipefail
 
 # Define the version
-version="v1.8.0"  # Example version
+version="v1.12.1"  # Example version  ## CHANGED By BOEMELTREIN
 
 # Define the OS and architecture combinations
 combinations=(
     "linux amd64"
+    "windows amd64"
+## DISABLED By Boemeltrein    
 #    "linux arm64"
 #    "darwin amd64"
 #    "darwin arm64"
-    "windows amd64"
 #    "freebsd amd64"
 #    "freebsd arm64"
 )
