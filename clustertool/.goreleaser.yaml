@@ -63,10 +63,10 @@ git:
     - nightly
     - common
 
+report_sizes: true
+
 # universal_binaries:
 #   - replace: true
-
-report_sizes: true
 
 # before:
 #   hooks:
@@ -102,6 +102,6 @@ report_sizes: true
 #      # Install binary
 #       bsdtar -xvf clustertool_${pkgver}_linux_${CARCH}.tar.gz -C "${pkgdir}"
 #       install -Dm755 "${pkgdir}/clustertool" "${pkgdir}/usr/bin/clustertool"
-
-      # Install license
-      install -Dm644 "${pkgdir}/LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+#
+#      # Install license
+#       install -Dm644 "${pkgdir}/LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
