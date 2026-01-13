@@ -20,17 +20,18 @@ gomod:
 archives:
   - id: linux
     format: tar.gz
-    name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
+    name_template: "{{ .ProjectName }}_{{ .Version }}_linux_{{ .Arch }}"
     builds: [clustertool]
-    conditions:
-      os: linux
+    goos:
+      - linux
 
   - id: windows
     format: zip
-    name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
+    name_template: "{{ .ProjectName }}_{{ .Version }}_windows_{{ .Arch }}"
     builds: [clustertool]
-    conditions:
-      os: windows
+    goos:
+      - windows
+
 checksum:
   name_template: "checksums.txt"
 snapshot:
