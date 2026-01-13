@@ -25,7 +25,7 @@ on:
   #    - 'pkg/**'
   #    - 'cmd/**'
   #    - 'clustertool/**'
-  #    - ".github/workflows/clsutertool.test.yaml"
+  #    - ".github/workflows/clustertool.test.yaml"
 permissions:
   contents: read
 jobs:
