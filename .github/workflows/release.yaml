@@ -43,6 +43,7 @@ jobs:
           chmod +x partial_builds/partial_build.sh
           chmod +x embed/download_talosctl.sh
           bash partial_builds/partial_build.sh
+          bash embed/download_talosctl.sh
 
       # ------------------------------------------------------------
       # Run GoReleaser using the clustertool config
