@@ -1,19 +1,22 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:recommended",
-    "github>trueforge-org/renovate-config",
-    "github>trueforge-org/renovate-config:autoMergeLabels.json5",
-    "github>Boemeltrein/boemeltool//.github/renovate/flux.json5"
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+  extends: [
+    'config:recommended',
+    'github>trueforge-org/renovate-config',
+    'github>trueforge-org/renovate-config:autoMergeLabels.json5',
+    'github>Boemeltrein/boemeltool//.github/renovate/flux.json5',
   ],
-  "regexManagers": [
+  customManagers: [
     {
-      "fileMatch": ["\\.sh$"],
-      "matchStrings": [
-        "version=\"(?<currentValue>v?[0-9\\.]+)\""
+      customType: 'regex',
+      managerFilePatterns: [
+        '/\\.sh$/',
       ],
-      "depNameTemplate": "ghcr.io/siderolabs/installer",
-      "datasourceTemplate": "docker"
-    }
-  ]
+      matchStrings: [
+        'version="(?<currentValue>v?[0-9\\.]+)"',
+      ],
+      depNameTemplate: 'ghcr.io/siderolabs/installer',
+      datasourceTemplate: 'docker',
+    },
+  ],
 }
