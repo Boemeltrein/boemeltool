@@ -36,5 +36,4 @@ jobs:
           working-directory: clustertool
           args: >
             --timeout=3m
-            --disable-all
-            --enable=ineffassign,unused
+            --enable-only=ineffassign,unused
