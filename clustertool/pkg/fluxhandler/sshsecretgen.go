@@ -128,6 +128,7 @@ func CreateGitSecret(gitURL string) error {
 }
 
 // indentYaml indents each line of the YAML string with the specified indentation.
+//nolint:unused
 func indentYaml(yamlStr, indent string) string {
 	lines := strings.Split(yamlStr, "\n")
 	for i, line := range lines {
@@ -193,6 +194,7 @@ func generateKnownHostsEntry(url string) string {
 }
 
 // encodeToBase64 encodes data to a base64 string
+//nolint:unused
 func encodeToBase64(data []byte) string {
 	return string(data)
 }
