@@ -21,6 +21,7 @@ import (
 //nolint:unused
 var encrConfig *EncryptionConfig
 
+//nolint:unused
 const ageKeyFilePath = "./age.agekey"
 
 func EncryptWithAgeKey(body []byte, regex string, format string) ([]byte, error) {

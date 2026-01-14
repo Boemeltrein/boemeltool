@@ -15,14 +15,8 @@ func ExecCmd(cmd string) {
 	log.Trace().Msgf("command", argslice[:])
 
 	// log.Info().Msg("test", strings.Join(argslice, " "))
-
-	// Added by Boemeltrein, for linting purposes
-	var out string
-	var err error
-
-	// Changed by Boemeltrein, for linting purposes
-	// out, err := helper.RunCommand(argslice, false)
-	out, err = helper.RunCommand(argslice, false)
+	//nolint:ineffassign
+	out, err := helper.RunCommand(argslice, false)
 
 	if err != nil {
 		log.Info().Msgf("err:  %v", err)
