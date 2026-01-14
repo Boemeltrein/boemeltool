@@ -3,7 +3,8 @@
   "extends": [
     "config:recommended",
     "github>trueforge-org/renovate-config",
-    "github>trueforge-org/renovate-config:autoMergeLabels.json5"
+    "github>trueforge-org/renovate-config:autoMergeLabels.json5",
+    "github>Boemeltrein/boemeltool//.github/renovate/flux.json5"
   ],
   "regexManagers": [
     {
