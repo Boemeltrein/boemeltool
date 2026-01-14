@@ -16,9 +16,14 @@ func ExecCmd(cmd string) {
 
 	// log.Info().Msg("test", strings.Join(argslice, " "))
 
+	// Added by Boemeltrein, for linting purposes
+	var out []byte
+	var err error
+
 	// Changed by Boemeltrein, for linting purposes
 	// out, err := helper.RunCommand(argslice, false)
-	_, err := helper.RunCommand(argslice, false)
+	out, err = helper.RunCommand(argslice, false)
+
 	if err != nil {
 		log.Info().Msgf("err:  %v", err)
 		if strings.Contains(cmd, "bootstrap") {
