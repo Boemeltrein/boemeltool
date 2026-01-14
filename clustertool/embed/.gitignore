@@ -1,9 +1,0 @@
-linux*
-darwin*
-windows*
-freebsd*
-
-!linux*/.keep
-!darwin*/.keep
-!windows*/.keep
-!freebsd*/.keep
