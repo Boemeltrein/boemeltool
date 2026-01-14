@@ -17,7 +17,7 @@ func ExecCmd(cmd string) {
 	// log.Info().Msg("test", strings.Join(argslice, " "))
 
 	// Added by Boemeltrein, for linting purposes
-	var out []byte
+	var out string
 	var err error
 
 	// Changed by Boemeltrein, for linting purposes
