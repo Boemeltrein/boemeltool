@@ -18,6 +18,7 @@ import (
 	"github.com/Boemeltrein/boemeltool/clustertool/pkg/helper"
 )
 
+//nolint:unused
 var encrConfig *EncryptionConfig
 
 const ageKeyFilePath = "./age.agekey"

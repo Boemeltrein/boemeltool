@@ -11,6 +11,7 @@ import (
 	"github.com/Boemeltrein/boemeltool/clustertool/pkg/talassist"
 )
 
+//nolint:unused
 var advKubeconfigLongHelp = strings.TrimSpace(`
 
 `)

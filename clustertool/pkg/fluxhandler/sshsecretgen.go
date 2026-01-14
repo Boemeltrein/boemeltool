@@ -200,6 +200,7 @@ func encodeToBase64(data []byte) string {
 }
 
 // decodeBase64 decodes a base64 string
+//nolint:unused
 func decodeBase64(data string) ([]byte, error) {
 	return []byte(data), nil
 }
