@@ -156,6 +156,8 @@ github.com/bshuster-repo/logrus-logstash-hook v1.0.0 h1:e+C0SB5R1pu//O4MQ3f9cFuP
 github.com/bshuster-repo/logrus-logstash-hook v1.0.0/go.mod h1:zsTqEiSzDgAa/8GZR7E1qaXrhYNDKBYy5/dWPTIflbk=
 github.com/budimanjojo/talhelper/v3 v3.1.0 h1:0YDjgySRg3SeFFfm7w3ZlJ2DToNWN673x/GONtyd71M=
 github.com/budimanjojo/talhelper/v3 v3.1.0/go.mod h1:0LjuZyGUQKRY6TGB0Py9sxFrKbFekdYinnwKLY/osvk=
+github.com/budimanjojo/talhelper/v3 v3.1.1 h1:4sAvlDLcUym1S5y09AWvXNEaC6g9UV/ywXHH908ztso=
+github.com/budimanjojo/talhelper/v3 v3.1.1/go.mod h1:0LjuZyGUQKRY6TGB0Py9sxFrKbFekdYinnwKLY/osvk=
 github.com/buger/jsonparser v1.1.1 h1:2PnMjfWD7wBILjqQbt530v576A/cAbQvEW9gGIpYMUs=
 github.com/buger/jsonparser v1.1.1/go.mod h1:6RYKKt7H4d4+iWqouImQ9R2FZql3VbhNgx27UK13J/0=
 github.com/cenkalti/backoff/v4 v4.3.0 h1:MyRJ/UdXutAwSAT+s3wNd7MfTIcy71VQueUuFK343L8=
