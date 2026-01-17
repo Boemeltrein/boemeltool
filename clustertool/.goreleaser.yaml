@@ -1,5 +1,6 @@
 version: 2
-project_name: clustertool
+# project_name: clustertool
+project_name: boemeltool
 builds:
   - id: clustertool
     dir: clustertool
