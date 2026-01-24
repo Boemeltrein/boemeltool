@@ -5,6 +5,7 @@
     'github>trueforge-org/renovate-config',
     'github>trueforge-org/renovate-config:autoMergeLabels.json5',
     'github>Boemeltrein/boemeltool//.github/renovate/flux.json5',
+    'github>Boemeltrein/boemeltool//.github/renovate/talos.json5',
   ],
   customManagers: [
     {
