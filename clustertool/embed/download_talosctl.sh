@@ -6,7 +6,7 @@ set -euo pipefail
 # Define the version
 ## ADDED By BOEMELTREIN
 # renovate: datasource=github-releases depName=ghcr.io/siderolabs/installer versioning=v<semver>
-version="v1.12.1"
+version="1.12.1"
 
 # Define the OS and architecture combinations
 combinations=(
@@ -21,7 +21,7 @@ combinations=(
 )
 
 # Base URL for downloading the file
-base_url="https://github.com/siderolabs/talos/releases/download/${version}"
+base_url="https://github.com/siderolabs/talos/releases/download/v${version}"
 
 # Iterate over each combination
 for combo in "${combinations[@]}"; do
