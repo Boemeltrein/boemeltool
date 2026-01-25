@@ -6,7 +6,7 @@ set -euo pipefail
 # Define the version
 ## ADDED By BOEMELTREIN
 # renovate: datasource=github-releases depName=siderolabs/installer versioning=v<semver>
-version="1.12.1"
+version=1.12.1
 
 # Define the OS and architecture combinations
 combinations=(
