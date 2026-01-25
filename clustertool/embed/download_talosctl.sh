@@ -5,7 +5,7 @@ set -euo pipefail
 
 # Define the version
 ## ADDED By BOEMELTREIN
-# renovate: datasource=docker depName=ghcr.io/siderolabs/installer    
+# renovate: datasource=github-releases depName=ghcr.io/siderolabs/installer versioning=v<semver>
 version="v1.12.1"
 
 # Define the OS and architecture combinations
