@@ -7,17 +7,4 @@
     'github>Boemeltrein/boemeltool//.github/renovate/flux.json5',
     'github>Boemeltrein/boemeltool//.github/renovate/talos.json5',
   ],
-  customManagers: [
-    {
-      customType: 'regex',
-      managerFilePatterns: [
-        '/\\.sh$/',
-      ],
-      matchStrings: [
-        'version="(?<currentValue>v?[0-9\\.]+)"',
-      ],
-      depNameTemplate: 'ghcr.io/siderolabs/installer',
-      datasourceTemplate: 'docker',
-    },
-  ],
 }
