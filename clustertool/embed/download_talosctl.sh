@@ -5,8 +5,8 @@ set -euo pipefail
 
 # Define the version
 ## ADDED By BOEMELTREIN
-# renovate: datasource=github-releases depName=siderolabs/installer
-version=1.12.1
+# renovate: datasource=docker depName=ghcr.io/siderolabs/installer    
+version="v1.12.1"
 
 # renovate: datasource=github-releases depName=kubernetes/kubernetes
 ENV kubectlVersion=1.34.0
@@ -24,7 +24,7 @@ combinations=(
 )
 
 # Base URL for downloading the file
-base_url="https://github.com/siderolabs/talos/releases/download/v${version}"
+base_url="https://github.com/siderolabs/talos/releases/download/${version}"
 
 # Iterate over each combination
 for combo in "${combinations[@]}"; do
