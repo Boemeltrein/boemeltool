@@ -8,6 +8,9 @@ set -euo pipefail
 # renovate: datasource=github-releases depName=siderolabs/installer
 version=1.12.1
 
+# renovate: datasource=github-releases depName=kubernetes/kubernetes
+ENV kubectlVersion=1.34.0
+
 # Define the OS and architecture combinations
 combinations=(
     "linux amd64"
