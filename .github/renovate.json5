@@ -9,7 +9,7 @@
   ],
   "devcontainer": {
     "managerFilePatterns": [
-      "/^clustertool/embed/generic/root/DOTREPLACEdevcontainer.json$/"
+      "/^clustertool\\/embed\\/generic\\/root\\/DOTREPLACEdevcontainer\\.json$/"
     ]
   }
 }
