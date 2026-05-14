@@ -22,7 +22,7 @@ require (
 	github.com/spf13/cobra v1.10.2
 	golang.org/x/crypto v0.51.0
 	gopkg.in/yaml.v3 v3.0.1
-	helm.sh/helm/v3 v3.20.2
+	helm.sh/helm/v3 v3.21.0
 	k8s.io/api v0.35.5
 	k8s.io/apimachinery v0.35.5
 	k8s.io/client-go v0.35.5
@@ -174,7 +174,7 @@ require (
 	github.com/gosuri/uitable v0.0.4 // indirect
 	github.com/goware/prefixer v0.0.0-20160118172347-395022866408 // indirect
 	github.com/gregjones/httpcache v0.0.0-20190611155906-901d90724c79 // indirect
-	github.com/grpc-ecosystem/grpc-gateway/v2 v2.27.3 // indirect
+	github.com/grpc-ecosystem/grpc-gateway/v2 v2.28.0 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
 	github.com/hashicorp/go-cleanhttp v0.5.2 // indirect
 	github.com/hashicorp/go-multierror v1.1.1 // indirect
@@ -275,7 +275,7 @@ require (
 	go.opentelemetry.io/otel/trace v1.43.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.27.0 // indirect
-	go.yaml.in/yaml/v2 v2.4.3 // indirect
+	go.yaml.in/yaml/v2 v2.4.4 // indirect
 	go.yaml.in/yaml/v3 v3.0.4 // indirect
 	go.yaml.in/yaml/v4 v4.0.0-rc.3 // indirect
 	golang.org/x/exp v0.0.0-20260410095643-746e56fc9e2f // indirect
