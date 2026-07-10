@@ -22,7 +22,7 @@ require (
 	github.com/spf13/cobra v1.10.2
 	golang.org/x/crypto v0.54.0
 	gopkg.in/yaml.v3 v3.0.1
-	helm.sh/helm/v3 v3.21.2
+	helm.sh/helm/v3 v3.21.3
 	k8s.io/api v0.36.2
 	k8s.io/apimachinery v0.36.2
 	k8s.io/client-go v0.36.2
@@ -107,7 +107,7 @@ require (
 	github.com/containernetworking/cni v1.3.0 // indirect
 	github.com/cosi-project/runtime v1.13.0 // indirect
 	github.com/cpuguy83/go-md2man/v2 v2.0.7 // indirect
-	github.com/cyphar/filepath-securejoin v0.6.1 // indirect
+	github.com/cyphar/filepath-securejoin v0.7.0 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
 	github.com/docker/cli v29.6.1+incompatible // indirect
 	github.com/docker/distribution v2.8.3+incompatible // indirect
