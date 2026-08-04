@@ -15,7 +15,7 @@ require (
 	github.com/joho/godotenv v1.5.1
 	github.com/knadh/koanf/parsers/yaml v1.1.1
 	github.com/knadh/koanf/providers/file v1.2.1
-	github.com/knadh/koanf/v2 v2.3.5
+	github.com/knadh/koanf/v2 v2.3.6
 	github.com/leaanthony/debme v1.2.1
 	github.com/rs/zerolog v1.35.1
 	github.com/siderolabs/talos/pkg/machinery v1.13.0-alpha.0
