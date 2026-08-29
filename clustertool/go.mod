@@ -3,7 +3,7 @@ module github.com/Boemeltrein/boemeltool/clustertool
 go 1.26.0
 
 require (
-	filippo.io/age v1.3.1
+	filippo.io/age v1.3.2
 	github.com/Masterminds/semver/v3 v3.5.0
 	github.com/beevik/ntp v1.5.0
 	github.com/budimanjojo/talhelper/v3 v3.1.3
