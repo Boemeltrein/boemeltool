@@ -76,7 +76,6 @@ require (
 	github.com/aws/aws-sdk-go-v2/feature/s3/manager v1.22.34 // indirect
 	github.com/aws/aws-sdk-go-v2/internal/configsources v1.4.30 // indirect
 	github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.7.30 // indirect
-	github.com/aws/aws-sdk-go-v2/internal/ini v1.8.4 // indirect
 	github.com/aws/aws-sdk-go-v2/internal/v4a v1.4.31 // indirect
 	github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding v1.13.13 // indirect
 	github.com/aws/aws-sdk-go-v2/service/internal/checksum v1.9.23 // indirect
@@ -98,11 +97,7 @@ require (
 	github.com/chai2010/gettext-go v1.0.2 // indirect
 	github.com/cloudflare/circl v1.6.4 // indirect
 	github.com/cncf/xds/go v0.0.0-20260202195803-dba9d589def2 // indirect
-	github.com/containerd/containerd v1.7.32 // indirect
-	github.com/containerd/errdefs v1.0.0 // indirect
 	github.com/containerd/go-cni v1.1.13 // indirect
-	github.com/containerd/log v0.1.0 // indirect
-	github.com/containerd/platforms v1.0.0-rc.1 // indirect
 	github.com/containerd/stargz-snapshotter/estargz v0.16.3 // indirect
 	github.com/containernetworking/cni v1.3.0 // indirect
 	github.com/cosi-project/runtime v1.13.0 // indirect
@@ -142,7 +137,6 @@ require (
 	github.com/go-openapi/swag/cmdutils v0.27.1 // indirect
 	github.com/go-openapi/swag/conv v0.27.1 // indirect
 	github.com/go-openapi/swag/fileutils v0.27.1 // indirect
-	github.com/go-openapi/swag/jsonname v0.25.1 // indirect
 	github.com/go-openapi/swag/jsonutils v0.27.1 // indirect
 	github.com/go-openapi/swag/loading v0.27.1 // indirect
 	github.com/go-openapi/swag/mangling v0.27.1 // indirect
@@ -174,7 +168,6 @@ require (
 	github.com/gookit/validate v1.5.6 // indirect
 	github.com/gosuri/uitable v0.0.4 // indirect
 	github.com/goware/prefixer v0.0.0-20160118172347-395022866408 // indirect
-	github.com/gregjones/httpcache v0.0.0-20190611155906-901d90724c79 // indirect
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.29.0 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
 	github.com/hashicorp/go-cleanhttp v0.5.2 // indirect
@@ -204,7 +197,6 @@ require (
 	github.com/leodido/go-urn v1.5.0 // indirect
 	github.com/lib/pq v1.12.3 // indirect
 	github.com/liggitt/tabwriter v0.0.0-20181228230101-89fcab3d43de // indirect
-	github.com/mailru/easyjson v0.9.0 // indirect
 	github.com/mattn/go-colorable v0.1.15 // indirect
 	github.com/mattn/go-isatty v0.0.23 // indirect
 	github.com/mattn/go-runewidth v0.0.16 // indirect
@@ -256,11 +248,9 @@ require (
 	github.com/spf13/cast v1.10.0 // indirect
 	github.com/spf13/pflag v1.0.10 // indirect
 	github.com/spiffe/go-spiffe/v2 v2.8.1 // indirect
-	github.com/stoewer/go-strcase v1.3.1 // indirect
 	github.com/tjfoc/gmsm v1.4.1 // indirect
 	github.com/urfave/cli v1.22.17 // indirect
 	github.com/vbatts/tar-split v0.12.1 // indirect
-	github.com/wk8/go-ordered-map/v2 v2.1.8 // indirect
 	github.com/x448/float16 v0.8.4 // indirect
 	github.com/xanzy/ssh-agent v0.3.3 // indirect
 	github.com/xlab/treeprint v1.2.0 // indirect
@@ -288,7 +278,6 @@ require (
 	golang.org/x/term v0.45.0 // indirect
 	golang.org/x/text v0.41.0 // indirect
 	golang.org/x/time v0.15.0 // indirect
-	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
 	google.golang.org/api v0.289.0 // indirect
 	google.golang.org/genproto v0.0.0-20260720171339-e059f2f05d78 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20260720171339-e059f2f05d78 // indirect
